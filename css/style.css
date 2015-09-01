@@ -10,20 +10,18 @@ body {
       width: 665px;
       margin-left: auto;
       margin-right: auto; }
-      body #super-wrapper #meny-bar button {
+      body #super-wrapper #meny-bar a button {
         height: 40px;
         background-color: black;
+        color: white;
         border: 0px;
         border-left: 15px solid black;
         border-right: 15px solid black;
         line-height: 15px;
-        outline: none;
-        font-size: 15px; }
-        body #super-wrapper #meny-bar button a {
-          list-style: none;
-          color: #B8B9BA;
-          text-decoration: none; }
-      body #super-wrapper #meny-bar button:active {
+        font-size: 15px;
+        line-height: 15px;
+        outline: none; }
+      body #super-wrapper #meny-bar a button:active {
         height: 40px;
         background-color: white;
         color: black;
@@ -33,10 +31,6 @@ body {
         font-size: 15px;
         line-height: 15px;
         outline: none; }
-        body #super-wrapper #meny-bar button:active a {
-          list-style: none;
-          color: black;
-          text-decoration: none; }
     body #super-wrapper #content-wrapper {
       margin-top: -45px;
       width: 815px;
