@@ -4,6 +4,7 @@
 <head>
 	<title>Start2</title>
 	<meta charset="utf-8" />
+	<script src="../js/main.js"
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
