@@ -5,16 +5,30 @@ body {
     body #super-wrapper #meny-bar {
       position: relative;
       z-index: 10;
-      top: 45px;
-      width: 415px;
+      top: 95px;
+      width: 690px;
       margin-left: auto;
       margin-right: auto; }
       body #super-wrapper #meny-bar button {
-        height: 25px;
+        height: 40px;
         background-color: black;
         color: #B8B9BA;
         border: 0px;
-        float: center; }
+        border-left: 15px solid black;
+        border-right: 15px solid black;
+        font-size: 15px;
+        line-height: 15px;
+        outline: none; }
+      body #super-wrapper #meny-bar button:active {
+        height: 40px;
+        background-color: white;
+        color: black;
+        border: 0px;
+        border-left: 15px solid white;
+        border-right: 15px solid white;
+        font-size: 15px;
+        line-height: 15px;
+        outline: noneM; }
     body #super-wrapper #content-wrapper {
       width: 815px;
       margin-left: auto;
