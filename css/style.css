@@ -36,3 +36,46 @@ body {
       width: 815px;
       margin-left: auto;
       margin-right: auto; }
+      body #super-wrapper #content-wrapper #results {
+        height: 800px;
+        width: 700px;
+        margin-left: 50px;
+        position: absolute;
+        outline: 1px solid white;
+        z-index: 3;
+        margin-top: -900px; }
+        body #super-wrapper #content-wrapper #results .image_contrib .new_image {
+          width: 220px;
+          height: 257;
+          margin: 17px 0px 0px 12px;
+          background-color: white;
+          float: left;
+          position: relative; }
+        body #super-wrapper #content-wrapper #results .image_contrib img {
+          width: 196px;
+          height: 168px;
+          margin-left: 12px;
+          margin-top: 34px; }
+        body #super-wrapper #content-wrapper #results .image_contrib .share {
+          background-image: url("../images/share_btn.png");
+          background-repeat: no-repeat;
+          height: 18px;
+          width: 18px; }
+        body #super-wrapper #content-wrapper #results .pagination_wrapper {
+          width: 100px;
+          height: 40px;
+          outline: 1px solid white;
+          position: absolute;
+          margin-top: -1200px;
+          z-index: 4; }
+          body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination {
+            margin-top: 1000px;
+            width: 100%; }
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination li {
+              list-style-type: none;
+              float: left; }
+              body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination li a {
+                color: white;
+                margin-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */

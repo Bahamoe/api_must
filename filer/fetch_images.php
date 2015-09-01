@@ -27,17 +27,17 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 	
 	echo '<div class="image_contrib">';
 	while($row = $results->fetch_assoc()) {
-		echo '<div class="image">';
-		echo  '<img src="' . $row["img_link"] . '"</img>';
+		echo '<div class="new_image">';
+		echo '<img src="' . $row["img_link"] . '"></img>';
 		echo '<p>votecount</p>';
-		echo '<p>dela_bild</p>';
+		echo '<div class="share"></div>';
 		echo '<button>Rösta</button>';
 		echo '</div>';
 	}  
 	echo '</div>';
 	
 	
-	echo '<div align="center">';
+	echo '<div class="pagination_wrapper">';
 	/* We call the pagination function here to generate Pagination link for us. 
 	As you can see I have passed several parameters to the function. */
 	echo paginate_function($item_per_page, $page_number, $get_total_rows[0], $total_pages);

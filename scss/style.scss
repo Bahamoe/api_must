@@ -46,6 +46,60 @@ body{
 
 				}
 			}
-		}	
+		#results {
+			height: 800px;
+			width: 700px;
+			margin-left: 50px;
+			position: absolute;
+			outline: 1px solid white;
+			z-index: 3;
+			margin-top: -900px;
+			.image_contrib {
+				.new_image {
+					width: 220px;
+					height: 257;
+					margin: 17px 0px 0px 12px;
+					background-color: white;
+					float: left;
+					position: relative;
+				}
+
+				img {
+					width: 196px;
+					height: 168px;
+					margin-left: 12px;
+					margin-top: 34px;
+				}
+				.share {
+					background-image: url("../images/share_btn.png");
+					background-repeat: no-repeat;
+					height: 18px;
+					width: 18px;
+				}
+			}
+			.pagination_wrapper {
+				width: 100px;
+				height: 40px;
+				outline: 1px solid white;
+				position: absolute;
+				margin-top: -1200px;
+				z-index: 4;
+
+				.pagination {
+					margin-top: 1000px;
+					width: 100%;
+					li {
+						list-style-type: none;
+						float: left;
+
+						a {
+							color: white;
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+		}
 	}
 }
