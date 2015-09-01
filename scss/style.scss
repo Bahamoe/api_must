@@ -1,12 +1,13 @@
 body{
 	background-color: black;
 	#super-wrapper{
+		top: 0;
 		width: 100%;
 		#meny-bar{
 			position: relative;
 			z-index: 10;
-			top: 95px;
-			width: 690px;
+			top: 55px;
+			width: 665px;
 			margin-left: auto;
 			margin-right: auto;
 			button{
@@ -42,6 +43,7 @@ body{
 			}
 		}
 		#content-wrapper{
+			margin-top: -45px;
 			width: 815px;
 			margin-left: auto;
 			margin-right: auto;
