@@ -6,6 +6,6 @@
 	<meta charset="utf-8" />
 </head>
 <body>
-	<a href=""><img src="Nya_Bilder/Start_ny.png"></a>
+	<a href=""><img src="../images/Start_ny.png"></a>
 </body>
 </html>

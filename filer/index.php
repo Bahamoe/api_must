@@ -9,29 +9,29 @@ ini_set('display_startup_errors',1);
 ini_set('display_errors',1);
 error_reporting(-1);
 session_start();
-require_once( 'Facebook/HttpClients/FacebookHttpable.php' );
-require_once( 'Facebook/HttpClients/FacebookCurl.php' );
-require_once( 'Facebook/HttpClients/FacebookCurlHttpClient.php' );
+require_once( '../Facebook/HttpClients/FacebookHttpable.php' );
+require_once( '../Facebook/HttpClients/FacebookCurl.php' );
+require_once( '../Facebook/HttpClients/FacebookCurlHttpClient.php' );
 
-require_once( 'Facebook/Entities/AccessToken.php' );
-require_once( 'Facebook/Entities/SignedRequest.php' );
+require_once( '../Facebook/Entities/AccessToken.php' );
+require_once( '../Facebook/Entities/SignedRequest.php' );
 
-require_once( 'Facebook/FacebookSession.php' );
-require_once( 'Facebook/FacebookRedirectLoginHelper.php' );
-require_once( 'Facebook/FacebookSignedRequestFromInputHelper.php' ); 
-require_once( 'Facebook/FacebookRequest.php' );
-require_once( 'Facebook/FacebookResponse.php' );
-require_once( 'Facebook/FacebookSDKException.php' );
-require_once( 'Facebook/FacebookRequestException.php' );
-require_once( 'Facebook/FacebookOtherException.php' );
-require_once( 'Facebook/FacebookAuthorizationException.php' );
+require_once( '../Facebook/FacebookSession.php' );
+require_once( '../Facebook/FacebookRedirectLoginHelper.php' );
+require_once( '../Facebook/FacebookSignedRequestFromInputHelper.php' ); 
+require_once( '../Facebook/FacebookRequest.php' );
+require_once( '../Facebook/FacebookResponse.php' );
+require_once( '../Facebook/FacebookSDKException.php' );
+require_once( '../Facebook/FacebookRequestException.php' );
+require_once( '../Facebook/FacebookOtherException.php' );
+require_once( '../Facebook/FacebookAuthorizationException.php' );
 
 // canvas och tab apps
-require_once( 'Facebook/FacebookCanvasLoginHelper.php' );
-require_once( 'Facebook/FacebookPageTabHelper.php' );
+require_once( '../Facebook/FacebookCanvasLoginHelper.php' );
+require_once( '../Facebook/FacebookPageTabHelper.php' );
 
-require_once( 'Facebook/GraphObject.php' );
-require_once( 'Facebook/GraphSessionInfo.php' );
+require_once( '../Facebook/GraphObject.php' );
+require_once( '../Facebook/GraphSessionInfo.php' );
 
 use Facebook\HttpClients\FacebookHttpable;
 use Facebook\HttpClients\FacebookCurl;
@@ -61,7 +61,7 @@ FacebookSession::setDefaultApplication(
 '742534125853136',
 '06cf24bccc2d372eea391a47e699ee9c');
 $pageHelper = new FacebookRedirectLoginHelper(
-'http://localhost/api_must_kopia/index2.php');
+'http://localhost/api_must/filer/index2.php');
 $session = $pageHelper->getSessionFromRedirect();
 
 if(isset($session)) {
@@ -72,9 +72,9 @@ if(isset($session)) {
 
 	$_SESSION["user_id"] = $graphObject["id"];
 } else {
-	$helper = new FacebookRedirectLoginHelper('http://localhost/api_must_kopia/index2.php');
+	$helper = new FacebookRedirectLoginHelper('http://localhost/api_must/filer/index2.php');
 
-	echo '<a href="' . $helper->getLoginUrl(array('email', 'user_friends')) . '" target="_top"><img src="images/LaggTill.jpg"></a>';
+	echo '<a href="' . $helper->getLoginUrl(array('email', 'user_friends')) . '" target="_top"><img src="../images/LaggTill.jpg"></a>';
 }
 ?>
 </body>
