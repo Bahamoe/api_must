@@ -1,0 +1,21 @@
+body {
+  background-color: black; }
+  body #super-wrapper {
+    width: 100%; }
+    body #super-wrapper #meny-bar {
+      position: relative;
+      z-index: 10;
+      top: 45px;
+      width: 415px;
+      margin-left: auto;
+      margin-right: auto; }
+      body #super-wrapper #meny-bar button {
+        height: 25px;
+        background-color: black;
+        color: #B8B9BA;
+        border: 0px;
+        float: center; }
+    body #super-wrapper #content-wrapper {
+      width: 815px;
+      margin-left: auto;
+      margin-right: auto; }
