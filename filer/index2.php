@@ -7,5 +7,6 @@
 </head>
 <body>
 	<a href=""><img src="../images/Start_ny.png"></a>
+</div>
 </body>
 </html>
