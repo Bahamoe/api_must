@@ -1,6 +1,4 @@
 <?php
-/* Title : Ajax Pagination with jQuery & PHP
-Example URL : http://www.sanwebe.com/2013/03/ajax-pagination-with-jquery-php */
 include("connect.php");
 //continue only if $_POST is set and it is a Ajax request
 if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
@@ -14,7 +12,7 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 	}
 	
 	//get total number of records from database for pagination
-	$results = $conn->query("SELECT COUNT(*) FROM paginate");
+	$results = $conn->query("SELECT COUNT(img_id) FROM images");
 	$get_total_rows = $results->fetch_row(); //hold total records in variable
 	//break records into pages
 	$total_pages = ceil($get_total_rows[0]/$item_per_page);
@@ -23,17 +21,20 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 	$page_position = (($page_number-1) * $item_per_page);
 	
 	//SQL query that will fetch group of records depending on starting position and item per page. See SQL LIMIT clause
-	$results = $conn->query("SELECT id, name, message FROM paginate ORDER BY id ASC LIMIT $page_position, $item_per_page");
+	$results = $conn->query("SELECT * FROM images ORDER BY img_id DESC LIMIT $page_position, $item_per_page");
 	
 	//Display records fetched from database.
 	
-	echo '<ul class="contents">';
+	echo '<div class="image_contrib">';
 	while($row = $results->fetch_assoc()) {
-		echo '<li>';
-		echo  $row["id"]. '. <strong>' .$row["name"].'</strong> &mdash; '.$row["message"];
-		echo '</li>';
+		echo '<div class="image">';
+		echo  '<img src="' . $row["img_link"] . '"</img>';
+		echo '<p>votecount</p>';
+		echo '<p>dela_bild</p>';
+		echo '<button>Rösta</button>';
+		echo '</div>';
 	}  
-	echo '</ul>';
+	echo '</div>';
 	
 	
 	echo '<div align="center">';
