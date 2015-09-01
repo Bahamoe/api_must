@@ -1,0 +1,32 @@
+body{
+	background-color: black;
+	#super-wrapper{
+		width: 100%;
+		#meny-bar{
+			position: relative;
+			z-index: 10;
+			top: 45px;
+			width: 415px;
+			margin-left: auto;
+			margin-right: auto;
+			button{
+				height: 25px;
+				//overflow: none;
+				background-color: black;
+				color: #B8B9BA;
+				border: 0px;
+				float: center;
+			}
+		}
+		#content-wrapper{
+			width: 815px;
+			margin-left: auto;
+			margin-right: auto;
+			a{
+				img{
+
+				}
+			}
+		}	
+	}
+}
