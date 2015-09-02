@@ -1,5 +1,11 @@
 <?php require 'header.php'; ?>
 
-<a href=""><img src="../images/Regler_Ny.png"></a>
+<img src="../images/Regler_Ny.png">
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		markedButton('#button5');
+	});
+</script>
 
 <?php require 'footer.php'; ?>

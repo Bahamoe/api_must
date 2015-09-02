@@ -12,10 +12,10 @@
 	<?php include("connect.php"); ?>
 	<div id="super-wrapper">
 		<div id="meny-bar">
-			<a href="tavla.php"><button class="meny-button">TÄVLA</button></a>
-			<a href="alla-bidrag.php"><button class="meny-button">ALLA BIDRAG</button></a>
-			<a href="topplista.php"><button class="meny-button">TOPPLISTA</button></a>
-			<a href="vinnare.php"><button class="meny-button">VINNARE</button></a>
-			<a href="regler.php"><button class="meny-button">REGLER & PRISER</button></a>
+			<a href="tavla.php" id="button1"><button class="meny-button">TÄVLA</button></a>
+			<a href="alla-bidrag.php" id="button2"><button class="meny-button">ALLA BIDRAG</button></a>
+			<a href="topplista.php" id="button3"><button class="meny-button">TOPPLISTA</button></a>
+			<a href="vinnare.php" id="button4"><button class="meny-button">VINNARE</button></a>
+			<a href="regler.php" id="button5"><button class="meny-button">REGLER & PRISER</button></a>
 		</div>
 		<div id="content-wrapper">

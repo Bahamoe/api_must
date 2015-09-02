@@ -10,7 +10,7 @@ body {
       width: 665px;
       margin-left: auto;
       margin-right: auto; }
-      body #super-wrapper #meny-bar a button {
+      body #super-wrapper #meny-bar a .meny-button {
         height: 40px;
         background-color: black;
         color: white;
@@ -20,8 +20,9 @@ body {
         line-height: 15px;
         font-size: 15px;
         line-height: 15px;
-        outline: none; }
-      body #super-wrapper #meny-bar a button:active {
+        outline: none;
+        cursor: pointer; }
+      body #super-wrapper #meny-bar a #marked-meny-button {
         height: 40px;
         background-color: white;
         color: black;

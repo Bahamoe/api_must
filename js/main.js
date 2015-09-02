@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	//$('meny-button').addClass('unmarked-menu-button');
 	$("#results" ).load( "../filer/fetch_images.php"); //load initial records
 	
 	//executes code below when user click on pagination links
@@ -10,3 +11,7 @@ $(document).ready(function() {
 		
 	});
 });
+function markedButton(button){
+
+	$(button+' button').removeClass('meny-button').attr('id', 'marked-meny-button');
+}

@@ -35,7 +35,7 @@ while($row = mysqli_fetch_assoc($query)){
 }
 
 
-    //Hätar bildlänkarna från imstagram 
+    //Hämtar bildlänkarna från imstagram 
     $tag = "nackaforummatochvin";
     $client_id = "714957dd4a4e4a94af32175858c041d3";
     $url = 'https://api.instagram.com/v1/tags/'.$tag.'/media/recent?client_id='.$client_id;

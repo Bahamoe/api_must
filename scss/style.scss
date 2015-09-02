@@ -11,7 +11,7 @@ body{
 			margin-left: auto;
 			margin-right: auto;
 			a{
-				button{
+				.meny-button{
 					height: 40px;
 					background-color: black;
 					color: white;
@@ -21,9 +21,10 @@ body{
 					line-height: 15px;
 					font-size: 15px;
 					line-height: 15px;
-					outline: none	
+					outline: none;
+					cursor: pointer;
 				}
-				button:active{
+				#marked-meny-button{
 					height: 40px;
 					background-color: white;
 					color: black;
@@ -33,7 +34,7 @@ body{
 					font-size: 15px;
 					line-height: 15px;
 					outline: none;
-				}
+				}	
 			}
 		}
 		#content-wrapper{
@@ -102,4 +103,5 @@ body{
 		}
 		}
 	}
+			
 }
