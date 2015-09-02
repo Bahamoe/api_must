@@ -54,7 +54,7 @@ body{
 			position: absolute;
 			outline: 1px solid white;
 			z-index: 3;
-			margin-top: -900px;
+			margin-top: -1100px;
 			.image_contrib {
 				.new_image {
 					width: 220px;
@@ -71,32 +71,89 @@ body{
 					margin-left: 12px;
 					margin-top: 34px;
 				}
-				.share {
-					background-image: url("../images/share_btn.png");
-					background-repeat: no-repeat;
-					height: 18px;
-					width: 18px;
+				.img_panel {
+					width: 196px;
+					height: 46px;
+					margin: 0 auto;
+					position: relative;
+					.share {
+						display: inline-block;
+						position: relative;
+						float: left;
+						border: 1px solid #d3d3d3;
+						border-radius: 3px;
+						background-image: url("../images/share_btn.png");
+						background-repeat: no-repeat;
+						background-position: center;
+						height: 25px;
+						width: 46px;
+					}
+					.votecount {
+						float: left;
+						width: 63px;
+						height: 25px;
+						border: 1px solid #d3d3d3;
+						border-radius: 3px;
+						position: relative;
+						.heart {
+							position: relative;
+							float: left;
+							margin: 4.5px 4.5px 0px 15px;
+							background-image: url("../images/unliked_btn.png");
+							background-repeat: no-repeat;
+							height: 16px;
+							width: 19px;
+						}
+						p {
+							position: relative;
+							float: left;
+						    display: block;
+						    -webkit-margin-before: 4px;
+						    -webkit-margin-after: 0em;
+						    -webkit-margin-start: 0px;
+						    -webkit-margin-end: 0px;
+						}
+					}
+					button {
+						background-color: black;
+					}
 				}
 			}
 			.pagination_wrapper {
-				width: 100px;
-				height: 40px;
-				outline: 1px solid white;
+				width: 400px;
+				height: 70px;
 				position: absolute;
 				margin-top: -1200px;
 				z-index: 4;
 
 				.pagination {
-					margin-top: 1000px;
-					width: 100%;
-					li {
-						list-style-type: none;
+					margin-top: 1150px;
+					width: 400px;
+					height: 70px;
+					position: relative;
+					.page, .next, .previous {
+						width: 125px;
+						height: 40px;
+						position: relative;
 						float: left;
-
-						a {
-							color: white;
-							margin-left: 10px;
-						}
+					}
+					.next {
+						width: 95px;
+						margin-left: 15px;
+					}
+					.page {
+						width: 95px;
+					}
+					.previous {
+						margin-right: 15px;
+					}
+					.next a, .previous a, .page p {
+						color: white;
+					    display: block;
+					    -webkit-margin-before: 1em;
+					    -webkit-margin-after: 1em;
+					    -webkit-margin-start: 0px;
+					    -webkit-margin-end: 0px;
 					}
 				}
 			}

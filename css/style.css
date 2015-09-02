@@ -44,7 +44,7 @@ body {
         position: absolute;
         outline: 1px solid white;
         z-index: 3;
-        margin-top: -900px; }
+        margin-top: -1100px; }
         body #super-wrapper #content-wrapper #results .image_contrib .new_image {
           width: 220px;
           height: 257;
@@ -57,26 +57,76 @@ body {
           height: 168px;
           margin-left: 12px;
           margin-top: 34px; }
-        body #super-wrapper #content-wrapper #results .image_contrib .share {
-          background-image: url("../images/share_btn.png");
-          background-repeat: no-repeat;
-          height: 18px;
-          width: 18px; }
+        body #super-wrapper #content-wrapper #results .image_contrib .img_panel {
+          width: 196px;
+          height: 46px;
+          margin: 0 auto;
+          position: relative; }
+          body #super-wrapper #content-wrapper #results .image_contrib .img_panel .share {
+            display: inline-block;
+            position: relative;
+            float: left;
+            border: 1px solid #d3d3d3;
+            border-radius: 3px;
+            background-image: url("../images/share_btn.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 25px;
+            width: 46px; }
+          body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount {
+            float: left;
+            width: 63px;
+            height: 25px;
+            border: 1px solid #d3d3d3;
+            border-radius: 3px;
+            position: relative; }
+            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .heart {
+              position: relative;
+              float: left;
+              margin: 4.5px 4.5px 0px 15px;
+              background-image: url("../images/unliked_btn.png");
+              background-repeat: no-repeat;
+              height: 16px;
+              width: 19px; }
+            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount p {
+              position: relative;
+              float: left;
+              display: block;
+              -webkit-margin-before: 4px;
+              -webkit-margin-after: 0em;
+              -webkit-margin-start: 0px;
+              -webkit-margin-end: 0px; }
+          body #super-wrapper #content-wrapper #results .image_contrib .img_panel button {
+            background-color: black; }
         body #super-wrapper #content-wrapper #results .pagination_wrapper {
-          width: 100px;
-          height: 40px;
-          outline: 1px solid white;
+          width: 400px;
+          height: 70px;
           position: absolute;
           margin-top: -1200px;
           z-index: 4; }
           body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination {
-            margin-top: 1000px;
-            width: 100%; }
-            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination li {
-              list-style-type: none;
+            margin-top: 1150px;
+            width: 400px;
+            height: 70px;
+            position: relative; }
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous {
+              width: 125px;
+              height: 40px;
+              position: relative;
               float: left; }
-              body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination li a {
-                color: white;
-                margin-left: 10px; }
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next {
+              width: 95px;
+              margin-left: 15px; }
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page {
+              width: 95px; }
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous {
+              margin-right: 15px; }
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next a, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous a, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page p {
+              color: white;
+              display: block;
+              -webkit-margin-before: 1em;
+              -webkit-margin-after: 1em;
+              -webkit-margin-start: 0px;
+              -webkit-margin-end: 0px; }
 
 /*# sourceMappingURL=style.css.map */
