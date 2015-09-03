@@ -68,9 +68,12 @@ if(isset($session)) {
 	$request = new FacebookRequest($session, 'GET', '/me');
 	$response = $request->execute();
 
-	$graphObject = $response->getGraphObject()->asArray();
+	$graphObject = $response->getGraphObject();
 
-	$_SESSION["user_id"] = $graphObject["id"];
+	$_SESSION['user_id'] = $graphObject['id'];
+
+
+
 } else {
 	$helper = new FacebookRedirectLoginHelper('http://localhost/api_must/filer/tavla.php');
 
