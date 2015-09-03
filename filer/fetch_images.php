@@ -22,7 +22,6 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 	
 	//SQL query that will fetch group of records depending on starting position and item per page. See SQL LIMIT clause
 	$results = $conn->query("SELECT * FROM images ORDER BY img_id DESC LIMIT $page_position, $item_per_page");
-	
 	//Display records fetched from database.
 	
 	echo '<div class="image_contrib">';
@@ -30,7 +29,9 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 		echo '<div class="new_image">';
 		echo '<img src="' . $row["img_link"] . '"></img>';
 		echo '<div class="img_panel">';
-		echo '<div class="votecount"><div class="heart"></div><p>0</p></div>';
+			echo '<div class="votecount"><div class="heart"></div><p>0</p></div>';
+			echo '<div class="votecount"><div class="redheart"></div><p>0</p></div>';
+		
 		echo '<div class="share"></div>';
 		echo '<button id="'. $row['img_id'] .'" class="btn_vote">Rösta</button>';
 		echo '</div>';
@@ -93,9 +94,10 @@ function paginate_function($item_per_page, $current_page, $total_records, $total
         	url:"save_vote.php",
         	data:"id="+voted_image,
         	success:function(){
+        		alert('success');
 
         	}
-    	)};
+    	});
 	});
 
 </script>

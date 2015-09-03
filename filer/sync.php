@@ -62,7 +62,7 @@ while($row = mysqli_fetch_assoc($query)){
     //Lägger till nya bilderlänkar till databasen som inte redan fanns.
     foreach ($imagesIG as $url => $new) {
         if($new){
-            $sql = "INSERT INTO images (img_link, IG_user) VALUES ('". $url ."')";
+            $sql = "INSERT INTO images (img_link) VALUES ('". $url ."')";
             mysqli_query($conn, $sql) ;
             echo "Added: ".$url."<br>";
         }
