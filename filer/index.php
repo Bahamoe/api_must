@@ -81,5 +81,8 @@ if(isset($session)) {
 }
 ?>
 
+<a href="<?php echo $login_link_url ?>"><img src="../images/LaggTill.jpg"></a>
+
+
 </body>
 </html>

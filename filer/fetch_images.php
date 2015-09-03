@@ -93,3 +93,4 @@ function paginate_function($item_per_page, $current_page, $total_records, $total
 	});
 </script>
 
+
