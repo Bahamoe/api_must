@@ -32,7 +32,7 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 		echo '<div class="img_panel">';
 		echo '<div class="votecount"><div class="heart"></div><p>0</p></div>';
 		echo '<div class="share"></div>';
-		echo '<button>Rösta</button>';
+		echo '<button id="'. $row['img_id'] .'" class="btn_vote">Rösta</button>';
 		echo '</div>';
 		echo '</div>';
 	}  
@@ -84,4 +84,12 @@ function paginate_function($item_per_page, $current_page, $total_records, $total
     mysqli_close($conn);
 }
 ?>
+<script type="text/javascript">
+	$(document).ready(function(){
+	});
+	$(".btn_vote").click(function(){
+		var voted_image = $(this).attr("id");
+		console.log(voted_image);
+	});
+</script>
 
