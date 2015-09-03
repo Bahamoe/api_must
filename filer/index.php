@@ -61,24 +61,27 @@ FacebookSession::setDefaultApplication(
 '742534125853136',
 '06cf24bccc2d372eea391a47e699ee9c');
 $pageHelper = new FacebookRedirectLoginHelper(
-'http://localhost/api_must/filer/tavla.php');
+'http://localhost/api_must/filer/index.php');
 $session = $pageHelper->getSessionFromRedirect();
 
 if(isset($session)) {
 	$request = new FacebookRequest($session, 'GET', '/me');
 	$response = $request->execute();
 
-	$graphObject = $response->getGraphObject();
+	$graphObject = $response->getGraphObject()->asArray();
 
 	$_SESSION['user_id'] = $graphObject['id'];
 
 
+	header('Location: http://localhost/api_must/filer/tavla.php');
+
 
 } else {
-	$helper = new FacebookRedirectLoginHelper('http://localhost/api_must/filer/tavla.php');
+	$helper = new FacebookRedirectLoginHelper('http://localhost/api_must/filer/index.php');
 
-	echo '<a href="' . $helper->getLoginUrl(array('email', 'user_friends')) . '" target="_top"><img src="../images/LaggTill.jpg"></a>';
+	$login_link_url = $helper->getLoginUrl(array('email', 'user_friends'));
 }
 ?>
+
 </body>
 </html>
