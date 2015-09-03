@@ -29,9 +29,11 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 		echo '<div class="new_image">';
 		echo '<img src="' . $row["img_link"] . '"></img>';
 		echo '<div class="img_panel">';
+		if($row['votes'] == 0){
 			echo '<div class="votecount"><div class="heart"></div><p>0</p></div>';
-			echo '<div class="votecount"><div class="redheart"></div><p>0</p></div>';
-		
+		}else{
+			echo '<div class="votecount"><div class="redheart"></div><p>'. $row['votes'] .'</p></div>';
+		}
 		echo '<div class="share"></div>';
 		echo '<button id="'. $row['img_id'] .'" class="btn_vote">Rösta</button>';
 		echo '</div>';
@@ -94,8 +96,7 @@ function paginate_function($item_per_page, $current_page, $total_records, $total
         	url:"save_vote.php",
         	data:"id="+voted_image,
         	success:function(){
-        		alert('success');
-
+        		$("#results" ).load( "../filer/fetch_images.php");
         	}
     	});
 	});

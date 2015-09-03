@@ -82,7 +82,7 @@ body {
             margin-top: 7px;
             position: relative;
             width: 63px; }
-            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .heart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .heart {
+            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .heart, body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .redheart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .heart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .redheart {
               position: relative;
               float: left;
               margin: 4.5px 4.5px 0px 15px;
@@ -90,6 +90,8 @@ body {
               background-repeat: no-repeat;
               height: 16px;
               width: 19px; }
+            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .redheart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .redheart {
+              background-image: url("../images/liked_btn.png"); }
             body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount p, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount p {
               position: relative;
               float: left;
@@ -145,5 +147,3 @@ body {
           margin-top: -330px; }
       body #super-wrapper #content-wrapper #latest_images {
         margin-top: -1000px; }
-
-/*# sourceMappingURL=style.css.map */
