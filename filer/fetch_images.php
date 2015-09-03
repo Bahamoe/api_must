@@ -27,6 +27,7 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 	echo '<div class="image_contrib">';
 	while($row = $results->fetch_assoc()) {
 		echo '<div class="new_image">';
+		echo '<p id="user_name">Agneta shödin</p>';
 		echo '<img src="' . $row["img_link"] . '"></img>';
 		echo '<div class="img_panel">';
 		if($row['votes'] == 0){

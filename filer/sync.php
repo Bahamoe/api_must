@@ -29,6 +29,7 @@ function callInstagram($url){
 $sql = "SELECT * FROM images";
 $query = mysqli_query($conn, $sql);
 $imagesDB = array();
+
 //Bygger en array av bildernalänkarna från databasen.
 while($row = mysqli_fetch_assoc($query)){
     $imagesDB[$row['img_link']] = $row['img_id'];
@@ -40,6 +41,7 @@ while($row = mysqli_fetch_assoc($query)){
     $client_id = "714957dd4a4e4a94af32175858c041d3";
     $url = 'https://api.instagram.com/v1/tags/'.$tag.'/media/recent?client_id='.$client_id;
     $imagesIG = array();
+    $Profile_name = array();
 
     //Hämtar bilder så länge $url inte är tom.
     while($url != ""){
@@ -57,14 +59,15 @@ while($row = mysqli_fetch_assoc($query)){
             $image_link = $item['images']['thumbnail']['url'];
             $Profile_name = $item['user']['username'];
             $imagesIG[$image_link] =(isset($imagesDB[$image_link]) ? false : true);
+
         }
     }
     //Lägger till nya bilderlänkar till databasen som inte redan fanns.
     foreach ($imagesIG as $url => $new) {
         if($new){
-            $sql = "INSERT INTO images (img_link) VALUES ('". $url ."')";
+            $sql = "INSERT INTO images (img_link, IG_user) VALUES ('". $url ."', '". $user ."')";
             mysqli_query($conn, $sql) ;
-            echo "Added: ".$url."<br>";
+            echo "Added: ".$url."and".$user."<br>";
         }
     }
     //Tar bort döda länkar.
@@ -75,5 +78,4 @@ while($row = mysqli_fetch_assoc($query)){
             echo "Removed: ".$url."<br>";
         }
     }
-
 ?>

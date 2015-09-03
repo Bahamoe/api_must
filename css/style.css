@@ -51,6 +51,9 @@ body {
           background-color: white;
           float: left;
           position: relative; }
+          body #super-wrapper #content-wrapper #results .image_contrib .new_image #user_name, body #super-wrapper #content-wrapper #latest_images .image_contrib .new_image #user_name {
+            margin-top: 15px;
+            margin-left: 15px; }
         body #super-wrapper #content-wrapper #results .image_contrib img, body #super-wrapper #content-wrapper #latest_images .image_contrib img {
           width: 196px;
           height: 168px;
