@@ -85,12 +85,19 @@ function paginate_function($item_per_page, $current_page, $total_records, $total
 }
 ?>
 <script type="text/javascript">
-	$(document).ready(function(){
-	});
+	
 	$(".btn_vote").click(function(){
 		var voted_image = $(this).attr("id");
-		console.log(voted_image);
+		$.ajax({
+        	type:"post",
+        	url:"save_vote.php",
+        	data:"id="+voted_image,
+        	success:function(){
+
+        	}
+    	)};
 	});
+
 </script>
 
 

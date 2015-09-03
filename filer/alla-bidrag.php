@@ -6,9 +6,6 @@
 	$(document).ready(function(){
 		markedButton('#button2');
 	});
-	$(".btn_vote").click(function(){
-		alert("hello!");
-	});
 </script>
 <?php require 'footer.php'; ?>
 
