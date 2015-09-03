@@ -47,12 +47,11 @@ body{
 
 				}
 			}
-		#results {
+		#results, #latest_images {
 			height: 800px;
 			width: 700px;
 			margin-left: 50px;
 			position: absolute;
-			outline: 1px solid white;
 			z-index: 3;
 			margin-top: -1100px;
 			.image_contrib {
@@ -77,24 +76,27 @@ body{
 					margin: 0 auto;
 					position: relative;
 					.share {
-						display: inline-block;
-						position: relative;
-						float: left;
+						background-image: url("../images/share_btn.png");
+						background-position: center;
+						background-repeat: no-repeat;
 						border: 1px solid #d3d3d3;
 						border-radius: 3px;
-						background-image: url("../images/share_btn.png");
-						background-repeat: no-repeat;
-						background-position: center;
+						display: inline-block;
+						float: left;
 						height: 25px;
+						margin-left: 10px;
+						margin-top: 7px;
+						position: relative;
 						width: 46px;
 					}
 					.votecount {
-						float: left;
-						width: 63px;
-						height: 25px;
 						border: 1px solid #d3d3d3;
 						border-radius: 3px;
+						float: left;
+						height: 25px;
+						margin-top: 7px;
 						position: relative;
+						width: 63px;
 						.heart {
 							position: relative;
 							float: left;
@@ -116,14 +118,25 @@ body{
 					}
 					button {
 						background-color: black;
+						color: white;
+						cursor: pointer;
+						border: 2px solid black;
+						border-radius: 2px;
+						font-size: 12pt;
+						font-style: uppercase;
+						margin-left: 10px;
+						margin-top: 7px;
+						height: 26px;
+						width: 63px;
 					}
 				}
 			}
-			.pagination_wrapper {
+			.pagination_wrapper, .pagination_wrapper_lower {
 				width: 400px;
 				height: 70px;
 				position: absolute;
 				margin-top: -1200px;
+				margin-left: 15px;
 				z-index: 4;
 
 				.pagination {
@@ -157,6 +170,12 @@ body{
 					}
 				}
 			}
+			.pagination_wrapper_lower {
+				margin-top: -330px;
+			}
+		}
+		#latest_images {
+			margin-top: -1000px;
 		}
 		}
 	}

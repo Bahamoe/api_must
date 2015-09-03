@@ -44,6 +44,11 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 	As you can see I have passed several parameters to the function. */
 	echo paginate_function($item_per_page, $page_number, $get_total_rows[0], $total_pages);
 	echo '</div>';
+	echo '<div class="pagination_wrapper_lower">';
+	/* We call the pagination function here to generate Pagination link for us. 
+	As you can see I have passed several parameters to the function. */
+	echo paginate_function($item_per_page, $page_number, $get_total_rows[0], $total_pages);
+	echo '</div>';
 }
 ################ pagination function #########################################
 function paginate_function($item_per_page, $current_page, $total_records, $total_pages)
@@ -76,6 +81,7 @@ function paginate_function($item_per_page, $current_page, $total_records, $total
         $pagination .= '</div>'; 
     }
     return $pagination; //return pagination links
+    mysqli_close($conn);
 }
 ?>
 
