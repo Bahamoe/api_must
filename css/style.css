@@ -37,31 +37,31 @@ body {
       width: 815px;
       margin-left: auto;
       margin-right: auto; }
-      body #super-wrapper #content-wrapper #results, body #super-wrapper #content-wrapper #latest_images {
+      body #super-wrapper #content-wrapper #results, body #super-wrapper #content-wrapper #latest_images, body #super-wrapper #content-wrapper #top_images {
         height: 800px;
         width: 700px;
         margin-left: 50px;
         position: absolute;
         z-index: 3;
         margin-top: -1100px; }
-        body #super-wrapper #content-wrapper #results .image_contrib .new_image, body #super-wrapper #content-wrapper #latest_images .image_contrib .new_image {
+        body #super-wrapper #content-wrapper #results .image_contrib .new_image, body #super-wrapper #content-wrapper #latest_images .image_contrib .new_image, body #super-wrapper #content-wrapper #top_images .image_contrib .new_image {
           width: 220px;
           height: 257;
           margin: 17px 0px 0px 12px;
           background-color: white;
           float: left;
           position: relative; }
-        body #super-wrapper #content-wrapper #results .image_contrib img, body #super-wrapper #content-wrapper #latest_images .image_contrib img {
+        body #super-wrapper #content-wrapper #results .image_contrib img, body #super-wrapper #content-wrapper #latest_images .image_contrib img, body #super-wrapper #content-wrapper #top_images .image_contrib img {
           width: 196px;
           height: 168px;
           margin-left: 12px;
           margin-top: 34px; }
-        body #super-wrapper #content-wrapper #results .image_contrib .img_panel, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel {
+        body #super-wrapper #content-wrapper #results .image_contrib .img_panel, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel, body #super-wrapper #content-wrapper #top_images .image_contrib .img_panel {
           width: 196px;
           height: 46px;
           margin: 0 auto;
           position: relative; }
-          body #super-wrapper #content-wrapper #results .image_contrib .img_panel .share, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .share {
+          body #super-wrapper #content-wrapper #results .image_contrib .img_panel .share, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .share, body #super-wrapper #content-wrapper #top_images .image_contrib .img_panel .share {
             background-image: url("../images/share_btn.png");
             background-position: center;
             background-repeat: no-repeat;
@@ -74,7 +74,7 @@ body {
             margin-top: 7px;
             position: relative;
             width: 46px; }
-          body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount {
+          body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount, body #super-wrapper #content-wrapper #top_images .image_contrib .img_panel .votecount {
             border: 1px solid #d3d3d3;
             border-radius: 3px;
             float: left;
@@ -82,7 +82,7 @@ body {
             margin-top: 7px;
             position: relative;
             width: 63px; }
-            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .heart, body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .redheart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .heart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .redheart {
+            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .heart, body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .redheart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .heart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .redheart, body #super-wrapper #content-wrapper #top_images .image_contrib .img_panel .votecount .heart, body #super-wrapper #content-wrapper #top_images .image_contrib .img_panel .votecount .redheart {
               position: relative;
               float: left;
               margin: 4.5px 4.5px 0px 15px;
@@ -90,9 +90,9 @@ body {
               background-repeat: no-repeat;
               height: 16px;
               width: 19px; }
-            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .redheart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .redheart {
+            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount .redheart, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount .redheart, body #super-wrapper #content-wrapper #top_images .image_contrib .img_panel .votecount .redheart {
               background-image: url("../images/liked_btn.png"); }
-            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount p, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount p {
+            body #super-wrapper #content-wrapper #results .image_contrib .img_panel .votecount p, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel .votecount p, body #super-wrapper #content-wrapper #top_images .image_contrib .img_panel .votecount p {
               position: relative;
               float: left;
               display: block;
@@ -100,7 +100,7 @@ body {
               -webkit-margin-after: 0em;
               -webkit-margin-start: 0px;
               -webkit-margin-end: 0px; }
-          body #super-wrapper #content-wrapper #results .image_contrib .img_panel button, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel button {
+          body #super-wrapper #content-wrapper #results .image_contrib .img_panel button, body #super-wrapper #content-wrapper #latest_images .image_contrib .img_panel button, body #super-wrapper #content-wrapper #top_images .image_contrib .img_panel button {
             background-color: black;
             color: white;
             cursor: pointer;
@@ -112,38 +112,42 @@ body {
             margin-top: 7px;
             height: 26px;
             width: 63px; }
-        body #super-wrapper #content-wrapper #results .pagination_wrapper, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower {
+        body #super-wrapper #content-wrapper #results .pagination_wrapper, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower, body #super-wrapper #content-wrapper #top_images .pagination_wrapper, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower {
           width: 400px;
           height: 70px;
           position: absolute;
           margin-top: -1200px;
           margin-left: 15px;
           z-index: 4; }
-          body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination {
+          body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination {
             margin-top: 1150px;
             width: 400px;
             height: 70px;
             position: relative; }
-            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .page, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .next, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .previous, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .page, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .next, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .previous {
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .page, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .next, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .previous, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .page, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .next, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .previous, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .page, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .next, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .previous {
               width: 125px;
               height: 40px;
               position: relative;
               float: left; }
-            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .next, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .next {
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .next, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .next, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .next, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .next {
               width: 95px;
               margin-left: 15px; }
-            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .page, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .page {
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .page, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .page, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .page, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .page {
               width: 95px; }
-            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .previous, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .previous {
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .previous, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .previous, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .previous, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .previous {
               margin-right: 15px; }
-            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next a, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous a, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page p, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .next a, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .previous a, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .page p, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .next a, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .previous a, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .page p, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .next a, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .previous a, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .page p {
+            body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .next a, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .previous a, body #super-wrapper #content-wrapper #results .pagination_wrapper .pagination .page p, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .next a, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .previous a, body #super-wrapper #content-wrapper #results .pagination_wrapper_lower .pagination .page p, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .next a, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .previous a, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper .pagination .page p, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .next a, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .previous a, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower .pagination .page p, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .next a, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .previous a, body #super-wrapper #content-wrapper #top_images .pagination_wrapper .pagination .page p, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .next a, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .previous a, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower .pagination .page p {
               color: white;
               display: block;
               -webkit-margin-before: 1em;
               -webkit-margin-after: 1em;
               -webkit-margin-start: 0px;
               -webkit-margin-end: 0px; }
-        body #super-wrapper #content-wrapper #results .pagination_wrapper_lower, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower {
+        body #super-wrapper #content-wrapper #results .pagination_wrapper_lower, body #super-wrapper #content-wrapper #latest_images .pagination_wrapper_lower, body #super-wrapper #content-wrapper #top_images .pagination_wrapper_lower {
           margin-top: -330px; }
       body #super-wrapper #content-wrapper #latest_images {
         margin-top: -1000px; }
+      body #super-wrapper #content-wrapper #top_images {
+        margin-top: 400px; }
+
+/*# sourceMappingURL=style.css.map */

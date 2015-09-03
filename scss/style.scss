@@ -47,7 +47,7 @@ body{
 
 				}
 			}
-		#results, #latest_images {
+		#results, #latest_images, #top_images {
 			height: 800px;
 			width: 700px;
 			margin-left: 50px;
@@ -180,6 +180,9 @@ body{
 		}
 		#latest_images {
 			margin-top: -1000px;
+		}
+		#top_images {
+			margin-top: 400px;
 		}
 		}
 	}
