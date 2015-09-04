@@ -28,6 +28,18 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		markedButton('#button3');
+
+		$(".btn_vote").click(function(){
+			var voted_image = $(this).attr("id");
+			$.ajax({
+       	 		type:"post",
+       	 		url:"save_vote.php",
+       	 		data:"id="+voted_image,
+       	 		success:function(){
+       	 			location.reload();
+       	 		}
+    		});
+		});
 	});
 </script>
 

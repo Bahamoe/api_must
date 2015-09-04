@@ -51,10 +51,6 @@ body {
           background-color: white;
           float: left;
           position: relative; }
-          body #super-wrapper #content-wrapper #results .image_contrib .new_image #user_name, body #super-wrapper #content-wrapper #latest_images .image_contrib .new_image #user_name {
-            margin-top: 15px;
-            margin-left: 15px; }
-        body #super-wrapper #content-wrapper #results .image_contrib img, body #super-wrapper #content-wrapper #latest_images .image_contrib img {
         body #super-wrapper #content-wrapper #results .image_contrib img, body #super-wrapper #content-wrapper #latest_images .image_contrib img, body #super-wrapper #content-wrapper #top_images .image_contrib img {
           width: 196px;
           height: 168px;
@@ -153,5 +149,10 @@ body {
         margin-top: -1000px; }
       body #super-wrapper #content-wrapper #top_images {
         margin-top: 400px; }
-
-/*# sourceMappingURL=style.css.map */
+  body .index_wrapper {
+    background-color: black;
+    width: 100%; }
+    body .index_wrapper img {
+      width: 810px;
+      height: 923px;
+      margin-left: 180px; }

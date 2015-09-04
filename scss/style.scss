@@ -62,10 +62,6 @@ body{
 					background-color: white;
 					float: left;
 					position: relative;
-					#user_name{
-						margin-top: 15px;
-						margin-left: 15px;
-					}
 				}
 
 				img {
@@ -112,7 +108,7 @@ body{
 						}
 						.redheart{
 						background-image: url("../images/liked_btn.png");
-					}
+						}
 						p {
 							position: relative;
 							float: left;
@@ -190,5 +186,13 @@ body{
 		}
 		}
 	}
-			
+	.index_wrapper {
+		background-color: black;
+		width: 100%;
+		img {
+			width: 810px;
+			height: 923px;
+			margin-left: 180px;
+		}
+	}
 }

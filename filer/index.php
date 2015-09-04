@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<title>Start</title>
 </head>
 <body>
@@ -80,8 +81,9 @@ if(isset($session)) {
 	$login_link_url = $helper->getLoginUrl(array('email', 'user_friends'));
 }
 ?>
-
-<a href="<?php echo $login_link_url ?>"><img src="../images/LaggTill.jpg"></a>
+<div class="index_wrapper">
+	<a href="<?php echo $login_link_url ?>"><img src="../images/LaggTill.jpg"></a>
+</div>
 
 
 </body>
